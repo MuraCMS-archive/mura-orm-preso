@@ -1,4 +1,10 @@
-component extends="mura.bean.beanORM" table="custom_personaddresses" entityname="personaddress" bundleable="true" displayname="PersonAddressBean" public=true {
+component 
+	extends="mura.bean.beanORM" 
+	table="custom_personaddresses" 
+	entityname="personaddress" 
+	bundleable="true" 
+	displayname="PersonAddressBean" 
+	public=true {
 
 	// primary key
 		property name="addressid" fieldtype="id";

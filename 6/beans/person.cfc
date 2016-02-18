@@ -32,4 +32,24 @@ component
 			loadkey="personid" 
 			cascade='delete' 
 			orderby="addresstype";
+
+	// foreign key (pre-defined bean by Mura)
+		property name="site" cfc="site" fieldtype="many-to-one" fkcolumn="siteid";
+
+	// hidden
+		property name="datecreated" datatype="datetime" nullable=true;
+		property name="datemodified" datatype="datetime" nullable=true;
+
+	// Custom Methods
+		public any function save() {
+			set('datemodified', Now());
+
+			if ( !Len(get('datecreated')) ) {
+				set('datecreated', Now());
+			}
+
+			super.save(argumentcollection=arguments);
+		} 
+	// @end Custom Methods
+
 }

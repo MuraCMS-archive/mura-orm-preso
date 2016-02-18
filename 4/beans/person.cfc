@@ -1,4 +1,11 @@
-component extends="mura.bean.beanORM" table="custom_persons" entityname="person" bundleable="true" displayname="PersonBean" public=true orderby="namelast,namefirst" {
+component 
+	extends="mura.bean.beanORM" 
+	table="custom_persons" 
+	entityname="person" 
+	bundleable="true" 
+	displayname="PersonBean" 
+	public=true 
+	orderby="namelast,namefirst" {
 
 	// primary key
 		property name="personid" fieldtype="id";
@@ -14,15 +21,6 @@ component extends="mura.bean.beanORM" table="custom_persons" entityname="person"
 			cfc="personphonenumber" 
 			fieldtype="one-to-many" 
 			loadkey="personid" 
-			cascade='delete' 
+			cascade="delete"
 			orderby="phonetype";
-
-		property 
-			name="addresses" 
-			singularname="address" 
-			cfc="personaddress" 
-			fieldtype="one-to-many" 
-			loadkey="personid" 
-			cascade='delete' 
-			orderby="addresstype";
 }
