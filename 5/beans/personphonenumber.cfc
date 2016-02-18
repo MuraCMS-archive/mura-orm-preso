@@ -13,6 +13,6 @@ component
 		property name="person" fieldtype="many-to-one" cfc="person" fkcolumn="personid" nullable=true;
 
 	// attributes
-		property name="phonetype" datatype="varchar" length="255" nullable=true; // Home, Work, Mobile, etc.
+		property name="phonetype" datatype="varchar" length="255" nullable=true; // Home, Office, Mobile, etc.
 		property name="phonenumber" datatype="varchar" length="255" nullable=true;
 }

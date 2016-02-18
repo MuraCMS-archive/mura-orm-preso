@@ -27,8 +27,9 @@
 									.getBean('person')
 									.loadby(namelast='Withington')
 									.set('namelast', 'Withington')
-									.set('namefirst', 'Steve')
-									.save();
+									.set('namefirst', 'Steve');
+
+				person.save();
 
 			// Home Phone
 				itPhoneNumber = m
