@@ -13,7 +13,7 @@
 			) VALUES (
 				'Grant'
 				, 'Shepert'
-				, '#CreateUUID()#'
+				, <cfqueryparam value="#CreateUUID()#" />
 			);
 		</cfquery>
 

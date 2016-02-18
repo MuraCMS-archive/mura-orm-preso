@@ -7,7 +7,7 @@ component extends="mura.bean.beanORM" table="custom_personaddresses" entityname=
 		property name="person" fieldtype="many-to-one" cfc="person" fkcolumn="personid" nullable=true;
 
 	// attributes
-		property name="addresstype" datatype="varchar" length="255" nullable=true; // Home, Work, etc.
+		property name="addresstype" datatype="varchar" length="255" nullable=true; // Home, Office, etc.
 		property name="street1" datatype="varchar" length="255" nullable=true;
 		property name="street2" datatype="varchar" length="255" nullable=true;
 		property name="city" datatype="varchar" length="255" nullable=true;
