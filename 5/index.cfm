@@ -16,7 +16,7 @@
 									.getBean('person')
 									.loadby(namelast='Withington')
 									.set('namelast', 'Withington')
-									.set('namefirst', 'Steve') // was Stephen!
+									.set('namefirst', 'Steve')
 									.save();
 
 
