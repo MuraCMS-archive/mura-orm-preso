@@ -14,6 +14,7 @@
 			// A Person
 				person = m
 									.getBean('person')
+									.loadBy(lastname='Withington')
 									.set('namelast', 'Withington')
 									.set('namefirst', 'Stephen')
 									.save();
