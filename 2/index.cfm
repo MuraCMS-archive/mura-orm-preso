@@ -9,12 +9,11 @@
 		<!--- New School --->
 		<cfscript>
 			// Mura Scope
-				m = application.mura.getBean('m').init('temp-demo');
+				m = application.mura.getBean('m').init(session.siteid);
 
 			// A Person
 				person = m
 									.getBean('person')
-									.loadBy(lastname='Withington')
 									.set('namelast', 'Withington')
 									.set('namefirst', 'Stephen')
 									.save();

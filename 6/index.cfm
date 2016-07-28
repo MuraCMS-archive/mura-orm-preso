@@ -20,7 +20,7 @@
 		<!--- New School --->
 		<cfscript>
 			// Mura Scope
-				m = application.mura.getBean('m').init('temp-demo');
+				m = application.mura.getBean('m').init(session.siteid);
 
 			// A Person
 				person = m
